@@ -7,7 +7,8 @@ February 13, 2024
 Bike Share Data Analysis Project
 
 ### Description
-Describe what your project is about and what it does
+This project focuses on analyzing bike share data from three major cities in the United States: Chicago, New York City, and Washington, DC. The data provided by Motivate, a bike share system provider, offers insights into bike share usage patterns. By examining this data, we aim to understand popular times of travel, popular stations and trips, trip durations, and user demographics.
+
 
 ### Files used
 Include the files used
