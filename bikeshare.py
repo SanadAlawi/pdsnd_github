@@ -1,4 +1,6 @@
 import pandas as pd
+from tabulate import tabulate
+
 CITY_DATA = {
     'chicago': 'chicago.csv',
     'new york': 'new_york_city.csv',
@@ -48,17 +50,14 @@ def user_info(df):
     return user_types, gender_counts, earliest_birth, recent_birth, common_birth
 
 def show_data(df):
-    gap = 5
-    start_index = 0;
-    end_index = gap 
-    show_more = True
-    while show_more:
-        print(df.iloc[start_index: end_index])
-        choice = input('show more 5 rows (yes / no). ')
-        if choice == 'no':
-            show_more = False
-        start_index = end_index
-        end_index += gap
+    pd.set_option("display.max_columns", 200)
+    i = 0
+    while True:
+        display_more = print('\nDo you want to view 5 rows of raw data? Please enter yes or no.\n').lower()
+        if display_more != 'yes':
+            break
+        print(tabulate(df.iloc[pd.arrange(0+i, 5+i)], headers='keys'))
+        i += 5
         
 def get_city_name():
     right_format = True
