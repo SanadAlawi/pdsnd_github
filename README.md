@@ -16,5 +16,7 @@ This project focuses on analyzing bike share data from three major cities in the
 * washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity's Data Science Nanodegree program for providing the project idea and dataset.
+[Motivate](https://motivateco.com/) for providing the bike share data.
+[Pandas](https://pandas.pydata.org/docs/) library for data manipulation and analysis in Python.
 
