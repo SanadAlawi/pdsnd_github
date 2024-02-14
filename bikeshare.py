@@ -48,6 +48,7 @@ def user_info(df):
     return user_types, gender_counts, earliest_birth, recent_birth, common_birth
 
 def show_data(df):
+    pd.set_option("display.max_columns", 200)
     gap = 5
     start_index = 0;
     end_index = gap 
